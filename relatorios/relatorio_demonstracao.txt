@@ -1,0 +1,61 @@
+RELATORIO GERAL DE RESGATE
+Central: Central de demonstracao
+Gerado em: 2026-11-17T17:11:59.202944885
+Robos: 4
+Disponiveis: 4
+Missoes: 4
+Concluidas: 2
+Pendentes: 2
+Sem atribuicao: 2
+Em andamento: 0
+Canceladas: 0
+Soma das missoes realizadas pelos robos: 2
+Bateria media: 76.25%
+
+ROBOS
+A1 | Navegador | bateria 60% | DISPONIVEL | concluidas 1 | Anfibio | capacidade 30 kg
+D1 | Olho do Ceu | bateria 75% | DISPONIVEL | concluidas 1 | Drone | altitude maxima 120 m
+D2 | Sentinela | bateria 70% | DISPONIVEL | concluidas 0 | Drone | altitude maxima 100 m
+T1 | Apoio Solo | bateria 100% | DISPONIVEL | concluidas 0 | Terrestre | capacidade 50 kg
+
+AREAS
+AR1 | Centro simulado | Setor 1 | URBANO | risco BAIXO | Area ficticia urbana.
+AR2 | Encosta simulada | Setor 2 | IRREGULAR | risco ALTO | Area ficticia com obstaculos.
+AR3 | Margem simulada | Setor 3 | ALAGADO | risco MEDIO | Area ficticia alagada.
+
+MISSOES E RESULTADOS
+M1 | RECONHECIMENTO | area AR2 | ALTA | CONCLUIDA | D1 | carga 0 kg | consumo 25 pontos | Reconhecer a encosta | Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+M2 | LOCALIZACAO_PESSOAS | area AR1 | ALTA | PENDENTE | sem robo | carga 0 kg | consumo 0 pontos | Buscar pessoas no centro | Ainda nao executada.
+M3 | TRANSPORTE_SUPRIMENTOS | area AR1 | MEDIA | PENDENTE | sem robo | carga 20 kg | consumo 0 pontos | Entregar alimentos no centro | Ainda nao executada.
+M4 | TRANSPORTE_SUPRIMENTOS | area AR3 | ALTA | CONCLUIDA | A1 | carga 25 kg | consumo 40 pontos | Entregar agua na margem | Entrega anfibia simulada de 25 kg concluida em Margem simulada.
+
+FILA PENDENTE EM ORDEM DE REGISTRO
+M2
+M3
+
+HISTORICO DA CENTRAL
+2026-11-17T17:11:59.194597145 | Robo cadastrado: D1
+2026-11-17T17:11:59.194680148 | Robo cadastrado: D2
+2026-11-17T17:11:59.194819134 | Robo cadastrado: T1
+2026-11-17T17:11:59.194871412 | Robo cadastrado: A1
+2026-11-17T17:11:59.195346106 | Area cadastrada: AR1
+2026-11-17T17:11:59.195368039 | Area cadastrada: AR2
+2026-11-17T17:11:59.195411013 | Area cadastrada: AR3
+2026-11-17T17:11:59.195948991 | Missao registrada na fila: M1
+2026-11-17T17:11:59.197109167 | Missao registrada na fila: M2
+2026-11-17T17:11:59.197223817 | Missao registrada na fila: M3
+2026-11-17T17:11:59.197247552 | Missao registrada na fila: M4
+2026-11-17T17:11:59.201895548 | Robo D1 reservado para M1
+2026-11-17T17:11:59.201977339 | Missao iniciada: M1
+2026-11-17T17:11:59.202122124 | Missao concluida: M1 | Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+2026-11-17T17:11:59.202357002 | Robo A1 reservado para M4
+2026-11-17T17:11:59.202415309 | Missao iniciada: M4
+2026-11-17T17:11:59.202479534 | Missao concluida: M4 | Entrega anfibia simulada de 25 kg concluida em Margem simulada.
+
+HISTORICO DE COMUNICACAO
+2026-11-17T17:11:59.202319567 | CENTRAL -> ROBO A1 | Reservado para a missao M4.
+2026-11-17T17:11:59.202377272 | CENTRAL -> ROBO A1 | Iniciar missao M4. Consumo previsto: 40 pontos.
+2026-11-17T17:11:59.202434958 | ROBO A1 -> CENTRAL | Missao M4 concluida. Entrega anfibia simulada de 25 kg concluida em Margem simulada.
+2026-11-17T17:11:59.201841307 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:11:59.201916819 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:11:59.202079951 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.

@@ -1,0 +1,53 @@
+Exemplos gravados em dados/central.dat
+RELATORIO GERAL DE RESGATE
+Central: Central de Resgate Robotico
+Gerado em: 2026-11-17T17:12:16.075964201
+Robos: 4
+Disponiveis: 4
+Missoes: 4
+Concluidas: 0
+Pendentes: 4
+Sem atribuicao: 4
+Em andamento: 0
+Canceladas: 0
+Soma das missoes realizadas pelos robos: 0
+Bateria media: 92.5%
+
+ROBOS
+A1 | Navegador | bateria 100% | DISPONIVEL | concluidas 0 | Anfibio | capacidade 30 kg
+D1 | Olho do Ceu | bateria 100% | DISPONIVEL | concluidas 0 | Drone | altitude maxima 120 m
+D2 | Sentinela | bateria 70% | DISPONIVEL | concluidas 0 | Drone | altitude maxima 100 m
+T1 | Apoio Solo | bateria 100% | DISPONIVEL | concluidas 0 | Terrestre | capacidade 50 kg
+
+AREAS
+AR1 | Centro simulado | Setor 1 | URBANO | risco BAIXO | Area ficticia urbana.
+AR2 | Encosta simulada | Setor 2 | IRREGULAR | risco ALTO | Area ficticia com obstaculos.
+AR3 | Margem simulada | Setor 3 | ALAGADO | risco MEDIO | Area ficticia alagada.
+
+MISSOES E RESULTADOS
+M1 | RECONHECIMENTO | area AR2 | ALTA | PENDENTE | sem robo | carga 0 kg | consumo 0 pontos | Reconhecer a encosta | Ainda nao executada.
+M2 | LOCALIZACAO_PESSOAS | area AR1 | ALTA | PENDENTE | sem robo | carga 0 kg | consumo 0 pontos | Buscar pessoas no centro | Ainda nao executada.
+M3 | TRANSPORTE_SUPRIMENTOS | area AR1 | MEDIA | PENDENTE | sem robo | carga 20 kg | consumo 0 pontos | Entregar alimentos no centro | Ainda nao executada.
+M4 | TRANSPORTE_SUPRIMENTOS | area AR3 | ALTA | PENDENTE | sem robo | carga 25 kg | consumo 0 pontos | Entregar agua na margem | Ainda nao executada.
+
+FILA PENDENTE EM ORDEM DE REGISTRO
+M1
+M2
+M3
+M4
+
+HISTORICO DA CENTRAL
+2026-11-17T17:12:16.053440081 | Robo cadastrado: D1
+2026-11-17T17:12:16.053531917 | Robo cadastrado: D2
+2026-11-17T17:12:16.053600068 | Robo cadastrado: T1
+2026-11-17T17:12:16.053670132 | Robo cadastrado: A1
+2026-11-17T17:12:16.054136083 | Area cadastrada: AR1
+2026-11-17T17:12:16.054159468 | Area cadastrada: AR2
+2026-11-17T17:12:16.054176513 | Area cadastrada: AR3
+2026-11-17T17:12:16.054731837 | Missao registrada na fila: M1
+2026-11-17T17:12:16.054765267 | Missao registrada na fila: M2
+2026-11-17T17:12:16.054784816 | Missao registrada na fila: M3
+2026-11-17T17:12:16.054809452 | Missao registrada na fila: M4
+
+HISTORICO DE COMUNICACAO
+

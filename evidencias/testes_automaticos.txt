@@ -1,0 +1,108 @@
+[OK] 01 Cadastros, consultas e identificadores ordenados
+[OK] 02 Robo duplicado nao substitui o original
+[OK] 03 Area duplicada rejeitada
+[OK] 04 Missao duplicada nao duplica a fila
+[OK] 05 Identificador tem espacos externos removidos
+[OK] 06 Bateria negativa rejeitada
+[OK] 07 Bateria acima de 100 rejeitada
+[OK] 08 Textos vazios, nulos e caracteristicas invalidas
+[OK] 09 Missao sem area rejeitada
+[OK] 10 Area nao cadastrada rejeitada
+[OK] 11 Mesmo id de area em outro objeto nao cria vinculo incorreto
+[OK] 12 Transporte exige carga positiva
+[OK] 13 Missao aerea exige carga zero
+[OK] 14 Drone nao transporta suprimentos
+[OK] 15 Terrestre nao executa busca aerea
+[OK] 16 Terrestre nao entra em terreno alagado
+[OK] 17 Carga superior a capacidade rejeitada
+[OK] 18 Bateria insuficiente nao reserva o robo
+2026-11-17T17:07:51.060770634 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+[OK] 19 Robo reservado nao recebe segunda missao
+[OK] 20 Inicio sem robo rejeitado
+2026-11-17T17:07:51.061775441 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.061823162 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.061879125 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+[OK] 21 Ciclo valido atualiza resultado, bateria, status e contador
+2026-11-17T17:07:51.062258461 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.062302106 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.062339912 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+[OK] 22 Reexecucao e reinicio de concluida bloqueados
+[OK] 23 Cancelamento de pendente sem robo remove da fila
+2026-11-17T17:07:51.063705958 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.063749042 | CENTRAL -> ROBO D1 | Missao M1 cancelada.
+[OK] 24 Cancelar reserva libera o robo sem consumo
+2026-11-17T17:07:51.064136940 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.064166243 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.064199613 | CENTRAL -> ROBO D1 | Missao M1 cancelada.
+[OK] 25 Cancelar em andamento consome previsao sem contar conclusao
+2026-11-17T17:07:51.064576174 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.064897363 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+[OK] 26 Recarga e manutencao bloqueadas durante reserva e execucao
+2026-11-17T17:07:51.065531167 | CENTRAL -> ROBO EXATO | Reservado para a missao M1.
+2026-11-17T17:07:51.065572329 | CENTRAL -> ROBO EXATO | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.065609674 | ROBO EXATO -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+2026-11-17T17:07:51.065638477 | ROBO EXATO -> CENTRAL | Recarga concluida. Bateria: 100%.
+[OK] 27 Bateria exata chega a zero e recarga restaura disponibilidade
+2026-11-17T17:07:51.066206303 | ROBO D1 -> CENTRAL | Recarga concluida. Bateria: 100%.
+[OK] 28 Manutencao impede atribuicao e recarga nao a encerra
+2026-11-17T17:07:51.066544567 | CENTRAL -> ROBO LIMITE | Reservado para a missao M2.
+2026-11-17T17:07:51.066774470 | CENTRAL -> ROBO LIMITE | Reserva da missao M2 retirada.
+2026-11-17T17:07:51.066807880 | ROBO LIMITE -> CENTRAL | Recarga concluida. Bateria: 100%.
+2026-11-17T17:07:51.066842922 | CENTRAL -> ROBO LIMITE | Reservado para a missao M2.
+2026-11-17T17:07:51.066877203 | CENTRAL -> ROBO LIMITE | Iniciar missao M2. Consumo previsto: 35 pontos.
+2026-11-17T17:07:51.066915210 | ROBO LIMITE -> CENTRAL | Missao M2 concluida. Busca aerea simulada concluida em Centro simulado. Um sinal de pessoa foi localizado na simulacao.
+[OK] 29 Aumento do risco antes do inicio revalida bateria
+2026-11-17T17:07:51.067259252 | CENTRAL -> ROBO D1 | Reservado para a missao M2.
+2026-11-17T17:07:51.067290919 | CENTRAL -> ROBO D1 | Iniciar missao M2. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.067405470 | ROBO D1 -> CENTRAL | Missao M2 concluida. Busca aerea simulada concluida em Centro simulado. Um sinal de pessoa foi localizado na simulacao.
+[OK] 30 Consumo fixado no inicio nao muda durante a execucao
+[OK] 31 Fila sem robo adequado preserva ordem e pendencias
+2026-11-17T17:07:51.071384700 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.071502485 | CENTRAL -> ROBO D2 | Reservado para a missao M2.
+[OK] 32 Atendimento FIFO pula reservas e atende a proxima sem atribuicao
+[OK] 33 Recomendacao usa consumo, bateria e id como desempates
+[OK] 34 Simulacao de autonomia nao altera objetos
+[OK] 35 Recomendacao sem candidatos retorna lista vazia
+2026-11-17T17:07:51.073540883 | CENTRAL -> ROBO D1 | Reconhecer setor
+2026-11-17T17:07:51.073587762 | ROBO D1 -> CENTRAL | Setor observado
+[OK] 36 Comunicacao registra os dois sentidos e rejeita texto vazio
+[OK] 37 Copias de colecoes protegem os registros originais
+[OK] 38 Relatorio da central vazia nao falha na media
+2026-11-17T17:07:51.077691698 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.077736214 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.077778657 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+2026-11-17T17:07:51.077810555 | CENTRAL -> ROBO D2 | Reservado para a missao M2.
+2026-11-17T17:07:51.077830625 | CENTRAL -> ROBO D2 | Iniciar missao M2. Consumo previsto: 25 pontos.
+[OK] 39 Relatorio conta todos os estados sem dupla contagem
+2026-11-17T17:07:51.080363269 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.080405231 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.107376091 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+[OK] 40 Serializacao preserva vinculos, fila, mensagens e missao em andamento
+[OK] 41 Arquivo corrompido tratado como erro de arquivo
+[OK] 42 Arquivo inexistente gera IOException
+[OK] 43 Arquivo com objeto de outra classe rejeitado
+[OK] 44 Falha de gravacao tratada
+2026-11-17T17:07:51.114095474 | CENTRAL -> ROBO A1 | Reservado para a missao M4.
+2026-11-17T17:07:51.114140742 | CENTRAL -> ROBO A1 | Iniciar missao M4. Consumo previsto: 40 pontos.
+2026-11-17T17:07:51.114242573 | ROBO A1 -> CENTRAL | Missao M4 concluida. Entrega anfibia simulada de 25 kg concluida em Margem simulada.
+[OK] 45 Bonus anfibio transporta no alagado
+[OK] 46 Formulas de consumo e terreno irregular
+[OK] 47 Relatorio salvo pode ser lido e mantem o instante de geracao
+2026-11-17T17:07:51.129797281 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.129863851 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.129917310 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+2026-11-17T17:07:51.129958982 | CENTRAL -> ROBO D1 | Reservado para a missao M2.
+2026-11-17T17:07:51.130089507 | CENTRAL -> ROBO D1 | Iniciar missao M2. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.130128705 | ROBO D1 -> CENTRAL | Missao M2 concluida. Busca aerea simulada concluida em Centro simulado. Um sinal de pessoa foi localizado na simulacao.
+2026-11-17T17:07:51.130162435 | CENTRAL -> ROBO T1 | Reservado para a missao M3.
+2026-11-17T17:07:51.130200352 | CENTRAL -> ROBO T1 | Iniciar missao M3. Consumo previsto: 20 pontos.
+2026-11-17T17:07:51.130237988 | ROBO T1 -> CENTRAL | Missao M3 concluida. Entrega terrestre simulada de 20 kg concluida em Centro simulado.
+2026-11-17T17:07:51.130258148 | CENTRAL -> ROBO A1 | Reservado para a missao M4.
+2026-11-17T17:07:51.130285218 | CENTRAL -> ROBO A1 | Iniciar missao M4. Consumo previsto: 40 pontos.
+2026-11-17T17:07:51.130314372 | ROBO A1 -> CENTRAL | Missao M4 concluida. Entrega anfibia simulada de 25 kg concluida em Margem simulada.
+[OK] 48 Fluxo completo das quatro missoes de demonstracao
+[OK] 49 Consultas de ids inexistentes e parametros nulos
+2026-11-17T17:07:51.134123889 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+[OK] 50 Missao nao aceita segunda atribuicao nem conclusao antes do inicio
+
+RESULTADO: 50 aprovados; 0 reprovados.

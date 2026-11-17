@@ -1,0 +1,2 @@
+2026-11-17T17:07:51.248935419 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+PROCESSO 2: recuperou, concluiu M1 uma vez e obteve D1 com bateria 75%. [OK]

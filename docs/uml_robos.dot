@@ -1,0 +1,13 @@
+digraph UML {
+graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.35, ranksep=0.55];
+node [shape=plain, fontname="DejaVu Sans", fontsize=16];
+edge [fontname="DejaVu Sans", fontsize=13, color="#465364"];
+I [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#edf1f5"><B>«interface» Comunicavel</B></TD></TR><HR/><TR><TD ALIGN="LEFT"> </TD></TR><HR/><TR><TD ALIGN="LEFT">+ enviarMensagem(String): void</TD></TR><TR><TD ALIGN="LEFT">+ receberMensagem(String): void</TD></TR></TABLE>>];
+R [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#edf1f5"><B>«abstract» Robo</B></TD></TR><HR/><TR><TD ALIGN="LEFT">- id, nome: String</TD></TR><TR><TD ALIGN="LEFT">- nivelBateria, missoesRealizadas: int</TD></TR><TR><TD ALIGN="LEFT">- status: StatusRobo</TD></TR><TR><TD ALIGN="LEFT">- missaoAtual: Missao</TD></TR><TR><TD ALIGN="LEFT">- historicoMensagens: List&lt;String&gt;</TD></TR><HR/><TR><TD ALIGN="LEFT">+ verificarDisponibilidade(): boolean</TD></TR><TR><TD ALIGN="LEFT">+ consultarBateria(): int</TD></TR><TR><TD ALIGN="LEFT">+ recarregar(): void</TD></TR><TR><TD ALIGN="LEFT">+ exibirResumo(): String</TD></TR><TR><TD ALIGN="LEFT">+ podeExecutar(Missao): boolean {abstract}</TD></TR><TR><TD ALIGN="LEFT">+ calcularConsumo(Missao): int {abstract}</TD></TR><TR><TD ALIGN="LEFT">+ executarMissao(Missao): void {abstract}</TD></TR></TABLE>>];
+D [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#edf1f5"><B>Drone</B></TD></TR><HR/><TR><TD ALIGN="LEFT">- altitudeMaxima: int</TD></TR><HR/><TR><TD ALIGN="LEFT">+ podeExecutar(Missao): boolean</TD></TR><TR><TD ALIGN="LEFT">+ calcularConsumo(Missao): int</TD></TR><TR><TD ALIGN="LEFT">+ executarMissao(Missao): void</TD></TR></TABLE>>];
+T [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#edf1f5"><B>RoboTerrestre</B></TD></TR><HR/><TR><TD ALIGN="LEFT">- capacidadeCarga: int</TD></TR><HR/><TR><TD ALIGN="LEFT">+ podeExecutar(Missao): boolean</TD></TR><TR><TD ALIGN="LEFT">+ calcularConsumo(Missao): int</TD></TR><TR><TD ALIGN="LEFT">+ executarMissao(Missao): void</TD></TR></TABLE>>];
+B [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#edf1f5"><B>RoboAnfibio</B></TD></TR><HR/><TR><TD ALIGN="LEFT">- capacidadeCarga: int</TD></TR><HR/><TR><TD ALIGN="LEFT">+ podeExecutar(Missao): boolean</TD></TR><TR><TD ALIGN="LEFT">+ calcularConsumo(Missao): int</TD></TR><TR><TD ALIGN="LEFT">+ executarMissao(Missao): void</TD></TR></TABLE>>];
+I -> R [dir=back,arrowtail=empty,style=dashed,label="implementa"];
+R -> D [dir=back,arrowtail=empty];R -> T [dir=back,arrowtail=empty];R -> B [dir=back,arrowtail=empty];
+{rank=same;D;T;B;}
+}

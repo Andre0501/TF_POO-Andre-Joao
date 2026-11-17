@@ -1,0 +1,227 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide empty members
+interface Comunicavel {
+  +enviarMensagem(String mensagem): void
+  +receberMensagem(String mensagem): void
+}
+class CentralResgate {
+  -nome: String
+  -robos: Map<String, Robo>
+  -areas: Map<String, AreaOperacao>
+  -missoes: Map<String, Missao>
+  -missoesPendentes: Queue<Missao>
+  -historicoOperacoes: List<String>
+  +cadastrarRobo(Robo robo): void
+  +cadastrarArea(AreaOperacao area): void
+  +registrarMissao(Missao missao): void
+  +buscarRobo(String id): Robo
+  +buscarArea(String id): AreaOperacao
+  +buscarMissao(String id): Missao
+  +listarRobos(): List<Robo>
+  +listarAreas(): List<AreaOperacao>
+  +listarMissoes(): List<Missao>
+  +listarRobosDisponiveis(): List<Robo>
+  +listarMissoesPendentes(): List<Missao>
+  +consultarHistoricoMissoes(): List<Missao>
+  +atribuirRoboMissao(String idRobo, String idMissao): void
+  +removerAtribuicao(String idMissao): void
+  +iniciarMissao(String idMissao): void
+  +executarMissao(String idMissao): void
+  +cancelarMissao(String idMissao): void
+  +recarregarRobo(String idRobo): void
+  +iniciarManutencao(String idRobo): void
+  +finalizarManutencao(String idRobo): void
+  +atualizarRiscoArea(String idArea, NivelRisco novoRisco): void
+  +enviarInstrucao(String idRobo, String mensagem): void
+  +receberInformacao(String idRobo, String mensagem): void
+  +recomendarRobos(String idMissao): List<Robo>
+  +simularAutonomia(String idMissao): String
+  +atenderProximaPendente(): String
+  +gerarRelatorioGeral(): Relatorio
+  +getNome(): String
+  +getHistoricoOperacoes(): List<String>
+}
+abstract class Robo {
+  -id: String
+  -nome: String
+  -nivelBateria: int
+  -status: StatusRobo
+  -missoesRealizadas: int
+  -missaoAtual: Missao
+  -historicoMensagens: List<String>
+  +verificarDisponibilidade(): boolean
+  +consultarBateria(): int
+  +recarregar(): void
+  +entrarEmManutencao(): void
+  +finalizarManutencao(): void
+  #validarMissaoEmAndamento(Missao missao): void
+  #adicionalRisco(Missao missao): int
+  +podeExecutar(Missao missao): boolean
+  +calcularConsumo(Missao missao): int
+  +executarMissao(Missao missao): void
+  +enviarMensagem(String mensagem): void
+  +receberMensagem(String mensagem): void
+  +getId(): String
+  +getNome(): String
+  +getNivelBateria(): int
+  +getStatus(): StatusRobo
+  +getMissoesRealizadas(): int
+  +getMissaoAtual(): Missao
+  +getHistoricoMensagens(): List<String>
+  +exibirResumo(): String
+  +toString(): String
+}
+class Drone {
+  -altitudeMaxima: int
+  +podeExecutar(Missao missao): boolean
+  +calcularConsumo(Missao missao): int
+  +executarMissao(Missao missao): void
+  +getAltitudeMaxima(): int
+  +exibirResumo(): String
+}
+class RoboTerrestre {
+  -capacidadeCarga: int
+  +podeExecutar(Missao missao): boolean
+  +calcularConsumo(Missao missao): int
+  +executarMissao(Missao missao): void
+  +getCapacidadeCarga(): int
+  +exibirResumo(): String
+}
+class RoboAnfibio {
+  -capacidadeCarga: int
+  +podeExecutar(Missao missao): boolean
+  +calcularConsumo(Missao missao): int
+  +executarMissao(Missao missao): void
+  +getCapacidadeCarga(): int
+  +exibirResumo(): String
+}
+class AreaOperacao {
+  -id: String
+  -nome: String
+  -localizacao: String
+  -tipoTerreno: TipoTerreno
+  -nivelRisco: NivelRisco
+  -descricao: String
+  +atualizarNivelRisco(NivelRisco novoNivel): void
+  +getId(): String
+  +getNome(): String
+  +getLocalizacao(): String
+  +getTipoTerreno(): TipoTerreno
+  +getNivelRisco(): NivelRisco
+  +getDescricao(): String
+  +exibirInformacoes(): String
+  +toString(): String
+}
+class Missao {
+  -id: String
+  -descricao: String
+  -tipo: TipoMissao
+  -area: AreaOperacao
+  -prioridade: PrioridadeMissao
+  -status: StatusMissao
+  -roboResponsavel: Robo
+  -resultado: String
+  -pesoSuprimentos: int
+  -consumoPrevisto: int
+  -consumoAplicado: int
+  +atribuirRobo(Robo robo): void
+  +removerRobo(): void
+  +iniciar(): void
+  +concluir(String resultado): void
+  +cancelar(): void
+  +getId(): String
+  +getDescricao(): String
+  +getTipo(): TipoMissao
+  +getArea(): AreaOperacao
+  +getPrioridade(): PrioridadeMissao
+  +getStatus(): StatusMissao
+  +getRoboResponsavel(): Robo
+  +getResultado(): String
+  +getPesoSuprimentos(): int
+  +getConsumoPrevisto(): int
+  +getConsumoAplicado(): int
+  +exibirResumo(): String
+  +toString(): String
+}
+class Relatorio {
+  -dataGeracao: LocalDateTime
+  -nomeCentral: String
+  -totalRobos: int
+  -totalMissoes: int
+  -missoesConcluidas: long
+  -missoesPendentes: long
+  -missoesEmAndamento: long
+  -missoesCanceladas: long
+  -aguardandoAtribuicao: long
+  -robosDisponiveis: int
+  -totalMissoesRealizadas: int
+  -mediaBateria: double
+  -detalhes: String
+  +gerarResumo(): String
+  +salvarEmArquivo(String nomeArquivo): void
+  +getDataGeracao(): LocalDateTime
+  +getTotalRobos(): int
+  +getTotalMissoes(): int
+  +getMissoesConcluidas(): long
+  +getMissoesPendentes(): long
+  +getMissoesEmAndamento(): long
+  +getMissoesCanceladas(): long
+  +getMediaBateria(): double
+}
+class Persistencia {
+  +salvar(CentralResgate central, String nomeArquivo): void
+  +carregar(String nomeArquivo): CentralResgate
+}
+enum StatusRobo {
+  DISPONIVEL
+  RESERVADO
+  EM_MISSAO
+  EM_MANUTENCAO
+  SEM_BATERIA
+}
+enum StatusMissao {
+  PENDENTE
+  EM_ANDAMENTO
+  CONCLUIDA
+  CANCELADA
+}
+enum NivelRisco {
+  BAIXO
+  MEDIO
+  ALTO
+}
+enum TipoTerreno {
+  URBANO
+  ALAGADO
+  IRREGULAR
+}
+enum TipoMissao {
+  RECONHECIMENTO
+  LOCALIZACAO_PESSOAS
+  TRANSPORTE_SUPRIMENTOS
+}
+enum PrioridadeMissao {
+  BAIXA
+  MEDIA
+  ALTA
+}
+Robo ..|> Comunicavel
+Drone --|> Robo
+RoboTerrestre --|> Robo
+RoboAnfibio --|> Robo
+CentralResgate "1" o-- "0..*" Robo : robos
+CentralResgate "1" o-- "0..*" AreaOperacao : areas
+CentralResgate "1" o-- "0..*" Missao : missoes e fila
+Missao "0..*" --> "1" AreaOperacao : area
+Missao "0..*" --> "0..1" Robo : responsavel e historico
+Robo --> "0..1" Missao : missaoAtual
+CentralResgate ..> Relatorio : gera
+Persistencia ..> CentralResgate : salva e recupera
+Robo --> StatusRobo
+Missao --> StatusMissao
+Missao --> TipoMissao
+Missao --> PrioridadeMissao
+AreaOperacao --> NivelRisco
+AreaOperacao --> TipoTerreno
+@enduml

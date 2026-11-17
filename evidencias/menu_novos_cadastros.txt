@@ -1,0 +1,110 @@
+Nova central criada. Opcao 21 carrega exemplos em uma central vazia.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Tipo 1 Drone, 2 Terrestre, 3 Anfibio: Id: Nome: Bateria de 0 a 100: Informe um valor entre 0 e 100.
+Bateria de 0 a 100: Altitude maxima em metros: Robo cadastrado.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id: Nome: Localizacao: Terreno 1 Urbano, 2 Alagado, 3 Irregular: Risco 1 Baixo, 2 Medio, 3 Alto: Descricao: Area cadastrada.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id: Descricao: Missao 1 Reconhecimento, 2 Localizar pessoas, 3 Transportar: Id da area cadastrada: Prioridade 1 Baixa, 2 Media, 3 Alta: Missao registrada na fila.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id do robo: Id da missao: 2026-11-17T17:09:47.699423871 | CENTRAL -> ROBO D9 | Reservado para a missao M9.
+Robo reservado.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id da missao: 2026-11-17T17:09:47.699734083 | CENTRAL -> ROBO D9 | Iniciar missao M9. Consumo previsto: 15 pontos.
+2026-11-17T17:09:47.699800472 | ROBO D9 -> CENTRAL | Missao M9 concluida. Reconhecimento aereo simulado concluido em Area de teste. Risco observado: BAIXO.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: D9 | Drone de teste | bateria 85% | DISPONIVEL | concluidas 1 | Drone | altitude maxima 120 m
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Dados salvos em /workspace/scratch/49968062b57d/.validacao/cadastros.dat
+Programa encerrado.

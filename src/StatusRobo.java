@@ -1,0 +1,3 @@
+public enum StatusRobo {
+    DISPONIVEL, RESERVADO, EM_MISSAO, EM_MANUTENCAO, SEM_BATERIA
+}

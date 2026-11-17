@@ -1,0 +1,69 @@
+Dados recuperados de /workspace/scratch/49968062b57d/.validacao/menu.dat
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id da missao: SIMULACAO DE AUTONOMIA | Missao M3
+Ordem: menor consumo; maior bateria; identificador.
+T1 | bateria 100% | consumo 20 pontos | restante 80%
+A1 | bateria 100% | consumo 25 pontos | restante 75%
+Sugestao: T1. A atribuicao continua sendo uma decisao da central.
+
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id do robo: Id da missao: 2026-11-17T17:09:47.556798612 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+Robo reservado.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id da missao: 2026-11-17T17:09:47.557338776 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+Missao em andamento. Opcao 10 executa e conclui.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Dados salvos em /workspace/scratch/49968062b57d/.validacao/menu.dat
+Programa encerrado.

@@ -1,0 +1,78 @@
+Nova central criada. Opcao 21 carrega exemplos em uma central vazia.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Digite um numero inteiro valido.
+Opcao: Opcao inexistente. Escolha uma opcao do menu.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Exemplos cadastrados.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id do robo: Id da missao: Dados invalidos: Robo incompativel com o tipo, terreno ou carga da missao.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id da missao: Operacao recusada: A missao deve estar pendente e ter um robo atribuido.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Dados salvos em /workspace/scratch/49968062b57d/.validacao/menu.dat
+Programa encerrado.
