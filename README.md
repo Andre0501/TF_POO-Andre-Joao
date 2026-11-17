@@ -1,6 +1,6 @@
 # Sistema de Coordenação de Robôs para Missões de Resgate
 
-Trabalho final de Programação Orientada a Objetos, 2026/02. Integrante identificado: André Matheus.
+Trabalho final de Programação Orientada a Objetos, 2026/02. Integrantes: André Matheus e João.
 
 Aplicação de console em Java, com código no nível das aulas até streams e lambdas. O ZIP inclui código-fonte, programa compilado, dados fictícios iniciais, relatório final, UML, guia de estudo, testes e capturas reais da execução.
 
