@@ -1,0 +1,2 @@
+Compilador Eclipse ECJ 3.40.0; source e target Java 8; execucao OpenJDK 21.
+Codigo de saida: 0

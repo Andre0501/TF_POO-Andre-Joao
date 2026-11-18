@@ -1,0 +1,33 @@
+{
+  "fontes_originais_preservadas": [
+    "Aplicacao.java",
+    "AreaOperacao.java",
+    "CentralResgate.java",
+    "Comunicavel.java",
+    "DadosExemplo.java",
+    "Demonstracao.java",
+    "Drone.java",
+    "Missao.java",
+    "NivelRisco.java",
+    "Persistencia.java",
+    "PrioridadeMissao.java",
+    "Relatorio.java",
+    "Robo.java",
+    "RoboAnfibio.java",
+    "RoboTerrestre.java",
+    "StatusMissao.java",
+    "StatusRobo.java",
+    "TesteRetomada.java",
+    "TestesSistema.java",
+    "TipoMissao.java",
+    "TipoTerreno.java"
+  ],
+  "arquivo_console_preservado": true,
+  "recursos_jar_identicos_ao_frontend": true,
+  "java_alvo": 21,
+  "testes_dominio": 50,
+  "verificacoes_api": 38,
+  "verificacoes_interface_dom": 38,
+  "retomada_em_outro_processo": true,
+  "windows": "Scripts preparados; não executados neste ambiente"
+}

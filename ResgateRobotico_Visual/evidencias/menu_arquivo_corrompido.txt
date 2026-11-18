@@ -1,0 +1,2 @@
+Falha ao recuperar os dados: invalid stream header: 61727175
+O arquivo existente foi preservado. Verifique-o antes de continuar.

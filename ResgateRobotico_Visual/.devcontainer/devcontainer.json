@@ -1,0 +1,12 @@
+{
+  "name": "Resgate Robótico — Java 21",
+  "image": "mcr.microsoft.com/devcontainers/java:21-bookworm",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Resgate — Central visual",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "bash compilar-web.sh"
+}

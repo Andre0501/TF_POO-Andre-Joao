@@ -1,0 +1,7 @@
+/extra-web/build/
+/extra-web/dados/
+/extra-web/fontes.txt
+/extra-web/tests/estado_esperado_retomada.json
+/node_modules/
+*.log
+__pycache__/

@@ -1,0 +1,29 @@
+DEMONSTRACAO | DADOS FICTICIOS
+
+1. INOVACAO: COMPARACAO DE AUTONOMIA
+SIMULACAO DE AUTONOMIA | Missao M3
+Ordem: menor consumo; maior bateria; identificador.
+T1 | bateria 100% | consumo 20 pontos | restante 80%
+A1 | bateria 100% | consumo 25 pontos | restante 75%
+Sugestao: T1. A atribuicao continua sendo uma decisao da central.
+
+2. CASO VALIDO: RECONHECIMENTO COM DRONE
+2026-11-17T17:07:51.304965774 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.305030440 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:07:51.305128306 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+D1 | Olho do Ceu | bateria 75% | DISPONIVEL | concluidas 1 | Drone | altitude maxima 120 m
+
+3. CASO INVALIDO: TERRESTRE NO ALAGADO
+REJEITADO: Robo incompativel com o tipo, terreno ou carga da missao.
+
+4. CASO INVALIDO: REINICIAR MISSAO CONCLUIDA
+REJEITADO: A missao deve estar pendente e ter um robo atribuido.
+
+5. BONUS: ENTREGA COM ANFIBIO
+2026-11-17T17:07:51.305297028 | CENTRAL -> ROBO A1 | Reservado para a missao M4.
+2026-11-17T17:07:51.305340112 | CENTRAL -> ROBO A1 | Iniciar missao M4. Consumo previsto: 40 pontos.
+2026-11-17T17:07:51.305387502 | ROBO A1 -> CENTRAL | Missao M4 concluida. Entrega anfibia simulada de 25 kg concluida em Margem simulada.
+A1 | Navegador | bateria 60% | DISPONIVEL | concluidas 1 | Anfibio | capacidade 30 kg
+
+Resumo: 4 robos; 4 missoes; 2 concluidas; 2 pendentes.
+Relatorio gravado em relatorios/relatorio_demonstracao.txt

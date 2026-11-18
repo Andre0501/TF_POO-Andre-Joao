@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#182321">
+  <meta name="description" content="Central visual para coordenar robôs, áreas e missões de resgate.">
+  <title>Resgate — Central de operações</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <button class="nav-backdrop" id="navBackdrop" aria-label="Fechar navegação" hidden></button>
+  <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+    <a class="brand" href="#inicio" aria-label="Resgate, visão geral">
+      <span class="brand-symbol" aria-hidden="true">✚</span>
+      <span>RESGATE<span class="brand-caption">CENTRAL DE OPERAÇÕES</span></span>
+    </a>
+    <div class="workspace-label">WORKSPACE <span>01</span></div>
+    <nav class="nav-list">
+      <a href="#inicio" data-page="inicio"><span data-icon="dashboard"></span>Visão geral</a>
+      <a href="#missoes" data-page="missoes"><span data-icon="missions"></span>Missões<span class="nav-count" id="navCount">—</span></a>
+      <a href="#frota" data-page="frota"><span data-icon="robot"></span>Frota de robôs</a>
+      <a href="#areas" data-page="areas"><span data-icon="map"></span>Áreas de operação</a>
+      <a href="#relatorios" data-page="relatorios"><span data-icon="chart"></span>Relatórios</a>
+      <a href="#atividade" data-page="atividade"><span data-icon="activity"></span>Atividade</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="side-note"><span class="live-dot"></span><div>Todo resgate começa<br>com uma boa decisão.</div></div>
+      <button class="sidebar-help" id="helpButton"><span data-icon="help"></span>Como operar a central<span data-icon="arrowUpRight"></span></button>
+      <div class="operator"><div class="avatar">AM</div><div><strong>André Matheus</strong><span>Operador da central</span></div><span class="operator-dot" title="Operador"></span></div>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-left"><button class="icon-button mobile-menu" id="menuButton" aria-label="Abrir navegação" aria-expanded="false"><span data-icon="menu"></span></button><span class="breadcrumb">Central <span>/</span> <strong id="breadcrumb">Visão geral</strong></span></div>
+      <div class="topbar-actions">
+        <button class="search-trigger" id="searchButton"><span data-icon="search"></span><span>Buscar na central</span><kbd>Ctrl K</kbd></button>
+        <button class="icon-button" id="themeButton" aria-label="Ativar tema escuro"><span data-icon="moon"></span></button>
+        <span class="topbar-divider"></span><div class="avatar avatar-small" aria-label="André Matheus">AM</div>
+      </div>
+    </header>
+    <div class="connection-banner" id="connectionBanner" role="alert" hidden><span data-icon="wifiOff"></span><span>Conexão interrompida. Os comandos ficam disponíveis quando a central reconectar.</span><button class="text-button" id="retryButton">Tentar novamente</button></div>
+    <main id="main" tabindex="-1">
+      <div class="page-heading"><div><div class="eyebrow">CENTRAL DE RESGATE ROBÓTICO</div><h1 id="pageTitle">Central de operações</h1><p id="pageDescription">Tudo o que a sua equipe precisa para agir.</p></div><div class="page-actions" id="pageActions"></div></div>
+      <div id="pageContent"><div class="loading-state"><span class="spinner"></span><h2>Conectando à central</h2><p>Preparando a frota e as operações…</p></div></div>
+      <footer class="page-footer"><span><span class="connection-dot" id="connectionDot"></span><span id="connectionLabel">Conectando</span></span><span id="savedLabel">Aguardando dados</span><span>RESGATE <span class="footer-plus">✚</span></span></footer>
+    </main>
+  </div>
+  <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle"><div id="detailContent"></div></dialog>
+  <dialog id="formDialog" class="form-dialog" aria-labelledby="formTitle"><div id="formContent"></div></dialog>
+  <dialog id="searchDialog" class="search-dialog" aria-label="Busca na central"><div id="searchContent"></div></dialog>
+  <div class="toast-region" id="toasts" aria-live="polite" aria-atomic="false"></div>
+  <noscript><div class="noscript">Ative o JavaScript para operar a central visual.</div></noscript>
+</body>
+</html>

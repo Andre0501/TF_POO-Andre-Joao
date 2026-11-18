@@ -1,0 +1,122 @@
+Dados recuperados de /workspace/scratch/49968062b57d/.validacao/menu.dat
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Id da missao: 2026-11-17T17:09:47.637891440 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: A1 | Navegador | bateria 100% | DISPONIVEL | concluidas 0 | Anfibio | capacidade 30 kg
+D1 | Olho do Ceu | bateria 75% | DISPONIVEL | concluidas 1 | Drone | altitude maxima 120 m
+D2 | Sentinela | bateria 70% | DISPONIVEL | concluidas 0 | Drone | altitude maxima 100 m
+T1 | Apoio Solo | bateria 100% | DISPONIVEL | concluidas 0 | Terrestre | capacidade 50 kg
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: RELATORIO GERAL DE RESGATE
+Central: Central de Resgate Robotico
+Gerado em: 2026-11-17T17:09:47.639244295
+Robos: 4
+Disponiveis: 4
+Missoes: 4
+Concluidas: 1
+Pendentes: 3
+Sem atribuicao: 3
+Em andamento: 0
+Canceladas: 0
+Soma das missoes realizadas pelos robos: 1
+Bateria media: 86.25%
+
+ROBOS
+A1 | Navegador | bateria 100% | DISPONIVEL | concluidas 0 | Anfibio | capacidade 30 kg
+D1 | Olho do Ceu | bateria 75% | DISPONIVEL | concluidas 1 | Drone | altitude maxima 120 m
+D2 | Sentinela | bateria 70% | DISPONIVEL | concluidas 0 | Drone | altitude maxima 100 m
+T1 | Apoio Solo | bateria 100% | DISPONIVEL | concluidas 0 | Terrestre | capacidade 50 kg
+
+AREAS
+AR1 | Centro simulado | Setor 1 | URBANO | risco BAIXO | Area ficticia urbana.
+AR2 | Encosta simulada | Setor 2 | IRREGULAR | risco ALTO | Area ficticia com obstaculos.
+AR3 | Margem simulada | Setor 3 | ALAGADO | risco MEDIO | Area ficticia alagada.
+
+MISSOES E RESULTADOS
+M1 | RECONHECIMENTO | area AR2 | ALTA | CONCLUIDA | D1 | carga 0 kg | consumo 25 pontos | Reconhecer a encosta | Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+M2 | LOCALIZACAO_PESSOAS | area AR1 | ALTA | PENDENTE | sem robo | carga 0 kg | consumo 0 pontos | Buscar pessoas no centro | Ainda nao executada.
+M3 | TRANSPORTE_SUPRIMENTOS | area AR1 | MEDIA | PENDENTE | sem robo | carga 20 kg | consumo 0 pontos | Entregar alimentos no centro | Ainda nao executada.
+M4 | TRANSPORTE_SUPRIMENTOS | area AR3 | ALTA | PENDENTE | sem robo | carga 25 kg | consumo 0 pontos | Entregar agua na margem | Ainda nao executada.
+
+FILA PENDENTE EM ORDEM DE REGISTRO
+M2
+M3
+M4
+
+HISTORICO DA CENTRAL
+2026-11-17T17:09:47.474740560 | Robo cadastrado: D1
+2026-11-17T17:09:47.474834610 | Robo cadastrado: D2
+2026-11-17T17:09:47.474876572 | Robo cadastrado: T1
+2026-11-17T17:09:47.474913567 | Robo cadastrado: A1
+2026-11-17T17:09:47.475219753 | Area cadastrada: AR1
+2026-11-17T17:09:47.475239643 | Area cadastrada: AR2
+2026-11-17T17:09:47.475252552 | Area cadastrada: AR3
+2026-11-17T17:09:47.475583936 | Missao registrada na fila: M1
+2026-11-17T17:09:47.475603235 | Missao registrada na fila: M2
+2026-11-17T17:09:47.475618117 | Missao registrada na fila: M3
+2026-11-17T17:09:47.475630255 | Missao registrada na fila: M4
+2026-11-17T17:09:47.556899702 | Robo D1 reservado para M1
+2026-11-17T17:09:47.557401159 | Missao iniciada: M1
+2026-11-17T17:09:47.638004718 | Missao concluida: M1 | Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+
+HISTORICO DE COMUNICACAO
+2026-11-17T17:09:47.556798612 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:09:47.557338776 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+2026-11-17T17:09:47.637891440 | ROBO D1 -> CENTRAL | Missao M1 concluida. Reconhecimento aereo simulado concluido em Encosta simulada. Risco observado: ALTO.
+
+Relatorio salvo em relatorios/relatorio_geral.txt
+
+CENTRAL DE RESGATE ROBOTICO
+1 Cadastrar robo             | 2 Consultar robos
+3 Robos disponiveis          | 4 Cadastrar area
+5 Consultar areas            | 6 Registrar missao
+7 Consultar missoes          | 8 Atribuir robo
+9 Iniciar missao             | 10 Executar e concluir missao
+11 Cancelar missao           | 12 Fila de pendencias
+13 Atender proxima da fila   | 14 Simular autonomia e recomendar
+15 Recarregar robo           | 16 Manutencao
+17 Atualizar risco           | 18 Comunicacao e mensagens
+19 Gerar e salvar relatorio  | 20 Salvar dados
+21 Criar dados de exemplo    | 22 Retirar atribuicao
+23 Historico das operacoes   | 0 Salvar e sair
+Opcao: Dados salvos em /workspace/scratch/49968062b57d/.validacao/menu.dat
+Programa encerrado.

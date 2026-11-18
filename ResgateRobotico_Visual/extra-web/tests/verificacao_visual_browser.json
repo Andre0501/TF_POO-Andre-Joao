@@ -1,0 +1,20 @@
+{
+  "larguras_css_conferidas": [
+    1348,
+    539,
+    337
+  ],
+  "sem_rolagem_horizontal_na_pagina": true,
+  "navegacao_compacta_conferida": true,
+  "temas_conferidos": [
+    "claro",
+    "escuro"
+  ],
+  "cadastros_conferidos_no_navegador": [
+    "robo",
+    "area",
+    "missao"
+  ],
+  "missao_reservada_iniciada_e_concluida_no_navegador": true,
+  "relatorio_real_conferido": true
+}

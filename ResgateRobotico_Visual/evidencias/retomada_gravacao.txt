@@ -1,0 +1,3 @@
+2026-11-17T17:07:51.177245831 | CENTRAL -> ROBO D1 | Reservado para a missao M1.
+2026-11-17T17:07:51.177524305 | CENTRAL -> ROBO D1 | Iniciar missao M1. Consumo previsto: 25 pontos.
+PROCESSO 1: salvou M1 EM_ANDAMENTO, D1 EM_MISSAO, bateria 100%, fila com 3.

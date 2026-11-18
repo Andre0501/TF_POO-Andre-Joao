@@ -1,0 +1,10 @@
+{
+  "name": "resgate-robotico-visual",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interface web extra para o projeto Java de resgate robótico.",
+  "scripts": {
+    "dev": "bash extra-web/preview.sh",
+    "check": "node --check extra-web/web/app.js"
+  }
+}

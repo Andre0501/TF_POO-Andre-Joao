@@ -1,0 +1,32 @@
+[
+  {
+    "caso": "entradas_invalidas",
+    "resultado": "OK",
+    "exit_code": 0
+  },
+  {
+    "caso": "retomar_e_executar",
+    "resultado": "OK",
+    "exit_code": 0
+  },
+  {
+    "caso": "continuar_em_novo_processo",
+    "resultado": "OK",
+    "exit_code": 0
+  },
+  {
+    "caso": "novos_cadastros",
+    "resultado": "OK",
+    "exit_code": 0
+  },
+  {
+    "caso": "fim_da_entrada",
+    "resultado": "OK",
+    "exit_code": 0
+  },
+  {
+    "caso": "arquivo_corrompido",
+    "resultado": "OK",
+    "exit_code": 0
+  }
+]

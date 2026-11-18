@@ -1,0 +1,11 @@
+digraph UML {
+graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.35, ranksep=0.55];
+node [shape=plain, fontname="DejaVu Sans", fontsize=16];
+edge [fontname="DejaVu Sans", fontsize=13, color="#465364"];
+C [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#edf1f5"><B>CentralResgate</B></TD></TR><HR/><TR><TD ALIGN="LEFT">- nome: String</TD></TR><HR/><TR><TD ALIGN="LEFT">+ gerarRelatorioGeral(): Relatorio</TD></TR></TABLE>>];
+L [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#edf1f5"><B>Relatorio</B></TD></TR><HR/><TR><TD ALIGN="LEFT">- dataGeracao: LocalDateTime</TD></TR><TR><TD ALIGN="LEFT">- totalRobos, totalMissoes: int</TD></TR><TR><TD ALIGN="LEFT">- missoesConcluidas, missoesPendentes: long</TD></TR><TR><TD ALIGN="LEFT">- mediaBateria: double</TD></TR><TR><TD ALIGN="LEFT">- detalhes: String</TD></TR><HR/><TR><TD ALIGN="LEFT">+ gerarResumo(): String</TD></TR><TR><TD ALIGN="LEFT">+ salvarEmArquivo(String): void</TD></TR></TABLE>>];
+P [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#edf1f5"><B>Persistencia</B></TD></TR><HR/><TR><TD ALIGN="LEFT"> </TD></TR><HR/><TR><TD ALIGN="LEFT">+ salvar(CentralResgate, String): void {static}</TD></TR><TR><TD ALIGN="LEFT">+ carregar(String): CentralResgate {static}</TD></TR></TABLE>>];
+C -> L [style=dashed,label="gera"];
+P -> C [style=dashed,label="salva e recupera"];
+
+}
