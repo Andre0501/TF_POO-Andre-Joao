@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c121c">
+  <meta name="description" content="Central de operações e treinamento para coordenar robôs, áreas e missões de resgate.">
+  <title>Visão geral — Resgate</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/app.css">
+  <script src="/scenario.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <button class="nav-backdrop" id="navBackdrop" aria-label="Fechar navegação" hidden></button>
+  <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+    <a class="brand" href="#inicio" aria-label="Resgate, visão geral">
+      <span class="brand-symbol" aria-hidden="true"><span data-icon="rescue"></span></span>
+      <span class="brand-text">RESGATE<span class="brand-caption">Central de comando</span></span>
+    </a>
+    <nav aria-label="Páginas da central">
+      <div class="nav-label">Coordenação</div>
+      <div class="nav-list">
+        <a href="#inicio" data-page="inicio"><span data-icon="dashboard"></span>Visão geral</a>
+        <a href="#missoes" data-page="missoes"><span data-icon="missions"></span>Missões<span class="nav-count" id="navCount">—</span></a>
+        <a href="#frota" data-page="frota"><span data-icon="robot"></span>Frota de robôs</a>
+        <a href="#areas" data-page="areas"><span data-icon="map"></span>Áreas de operação</a>
+      </div>
+      <div class="nav-label">Acompanhamento</div>
+      <div class="nav-list">
+        <a href="#relatorios" data-page="relatorios"><span data-icon="chart"></span>Relatórios</a>
+        <a href="#atividade" data-page="atividade"><span data-icon="activity"></span>Atividade</a>
+      </div>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="training-note"><span data-icon="scan"></span><div><strong>Modo treinamento</strong><span>Cenários ilustrativos</span></div></div>
+      <button class="sidebar-help" id="helpButton"><span data-icon="help"></span>Guia de operação<span data-icon="arrowUpRight"></span></button>
+      <div class="operator"><div class="avatar">AM</div><div><strong>André Matheus</strong><span>Operador da central</span></div></div>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="icon-button mobile-menu" id="menuButton" type="button" aria-label="Abrir navegação" aria-expanded="false" aria-controls="sidebar"><span data-icon="menu"></span></button>
+        <span class="breadcrumb">Central <span data-icon="chevron"></span> <strong id="breadcrumb">Visão geral</strong></span>
+      </div>
+      <div class="topbar-actions">
+        <span class="connection-status" id="connectionStatus" role="status"><span class="connection-dot" id="connectionDot"></span><span id="connectionLabel">Conectando</span></span>
+        <div class="topbar-divider"></div>
+        <button class="search-trigger" id="searchButton" type="button" aria-label="Buscar na central"><span data-icon="search"></span><span>Buscar na central</span><kbd>Ctrl K</kbd></button>
+        <button class="icon-button theme-button" id="themeButton" type="button" aria-label="Ativar tema claro"><span data-icon="sun"></span></button>
+      </div>
+    </header>
+    <div class="connection-banner" id="connectionBanner" role="alert" hidden><span data-icon="wifiOff"></span><span>Conexão interrompida. Os comandos ficam disponíveis quando a central reconectar.</span><button class="text-button" id="retryButton">Tentar novamente</button></div>
+    <main id="main" tabindex="-1">
+      <div class="page-heading" id="pageHeading">
+        <div><div class="eyebrow page-kicker"><span></span>Resposta a emergências</div><h1 id="pageTitle">Central de operações</h1><p id="pageDescription">Coordene a frota, acompanhe as missões e monitore as áreas de risco.</p></div>
+        <div class="page-actions" id="pageActions"></div>
+      </div>
+      <div id="pageContent"><div class="loading-state"><span class="spinner"></span><h2>Conectando à central</h2><p>Preparando a frota e as operações…</p></div></div>
+      <footer class="page-footer"><span id="savedLabel">Aguardando dados</span><span><span data-icon="rescue"></span> RESGATE</span></footer>
+    </main>
+  </div>
+  <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle"><div id="detailContent"></div></dialog>
+  <dialog id="formDialog" class="form-dialog" aria-labelledby="formTitle"><div id="formContent"></div></dialog>
+  <dialog id="searchDialog" class="search-dialog" aria-label="Busca na central"><div id="searchContent"></div></dialog>
+  <div class="toast-region" id="toasts" aria-live="polite" aria-atomic="false"></div>
+  <noscript><div class="noscript">Ative o JavaScript para operar a central visual.</div></noscript>
+</body>
+</html>
